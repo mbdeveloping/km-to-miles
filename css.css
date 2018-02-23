@@ -18,6 +18,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   height: 500px;
+  display: table;
+  margin: 0 auto;
 }
 
 p {
