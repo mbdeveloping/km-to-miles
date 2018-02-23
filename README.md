@@ -1,2 +1,2 @@
 # km-to-miles
-Learning Github by changing code and adding it to it.
+Learning Github by upadting basic km to miles calculator code.
