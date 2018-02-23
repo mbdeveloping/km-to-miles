@@ -7,16 +7,16 @@ function generate() {
   var kilometruTxt = "";
 
   if (theInput < 1) {
-    document.getElementById("demo").innerHTML = "Iveskite teisinga reiksme!";
+    document.getElementById("demo").innerHTML = "Please enter a valid numbers!";
   } else {
     if (theInput == 1) {
-      document.getElementById("demo").innerHTML = theInput + " kilometras yra " + theInput * MILES.toFixed(3) + " mylios.";
+      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
     }
     else if (theInput < 10) {
-      document.getElementById("demo").innerHTML = theInput + " kilometrai yra " + theInput * MILES.toFixed(3) + " mylios.";
+      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
     }
     else if (theInput > 9) {
-      document.getElementById("demo").innerHTML = theInput + " kilometru yra " + theInput * MILES.toFixed(3) + " mylios.";
+      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
     }
   }
 }
