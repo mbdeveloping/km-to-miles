@@ -22,7 +22,7 @@ function generate() {
 }
 
 
-function isvalyti() {
+function clearField() {
   document.getElementById("demo").innerHTML = "";
   document.getElementById('txtInput').value = "";
 }
