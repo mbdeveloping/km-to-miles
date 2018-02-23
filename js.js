@@ -1,28 +1,25 @@
 const MILES = 0.621371192;
-
-
+let msgEl = document.getElementById("demo");
+let el = document.getElementById('txtInput');
 
 function generate() {
-  var theInput = document.getElementById('txtInput').value;
-  var kilometruTxt = "";
 
-  if (theInput < 1) {
-    document.getElementById("demo").innerHTML = "Please enter a valid numbers!";
+  if (el.value < 1) {
+
+    msgEl.textContent = "Please enter a valid numbers!";
   } else {
-    if (theInput == 1) {
-      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
-    }
-    else if (theInput < 10) {
-      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
-    }
-    else if (theInput > 9) {
-      document.getElementById("demo").innerHTML = theInput + " km is " + theInput * MILES.toFixed(3) + " miles.";
-    }
+
+      msgEl.textContent = el.value + " km is " + el.value * MILES.toFixed(3) + " miles.";
+
   }
 }
 
+let convertBtnEl = document.getElementById("convert-btn");
+convertBtnEl.addEventListener('click', generate, false);
 
-function clearField() {
-  document.getElementById("demo").innerHTML = "";
-  document.getElementById('txtInput').value = "";
+function clearFields() {
+  msgEl.textContent = "";
+  el.value = "";
 }
+let cleartBtnEl = document.getElementById("clear-btn");
+cleartBtnEl.addEventListener('click', clearFields, false);
